@@ -714,26 +714,31 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
 <!-- FOOTER -->
 <style>
 @media (max-width: 768px) {
-  /* Remove margens extras que estão alongando o rodapé */
-  .footer-top { display: block !important; }
-  
-  .footer-col { 
-    width: 100% !important; 
-    margin-bottom: 10px !important; 
+  /* Força a redução de qualquer margem ou preenchimento do rodapé */
+  footer, .footer-inner, .footer-top, .footer-col {
+    padding: 5px !important;
+    margin: 0 !important;
   }
 
-  /* Esconde o espaçamento padrão da lista */
-  .footer-col ul { 
-    display: flex !important; 
-    flex-wrap: wrap !important; 
-    padding: 0 !important; 
-    margin: 0 !important; 
+  /* Faz a lista ser flexível e ocupar a largura total, eliminando espaço entre itens */
+  .footer-col ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  /* Define o tamanho de cada item para caber 2 por linha */
-  .footer-col li { 
-    width: 50% !important; 
-    padding: 5px 0 !important; 
+  /* Define 50% de largura para cada item, forçando a grade de 2 colunas */
+  .footer-col li {
+    width: 50% !important;
+    font-size: 14px !important;
+    padding: 2px 0 !important;
+  }
+
+  /* Esconde o logo se ele estiver ocupando espaço demais */
+  .footer-top img {
+    max-width: 100px !important;
+    margin-bottom: 10px !important;
   }
 }
 </style>
