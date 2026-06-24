@@ -714,30 +714,26 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
 <!-- FOOTER -->
 <style>
 @media (max-width: 768px) {
-  /* Força o container pai a aceitar quebrar linha */
-  .footer-top { 
-    display: flex !important; 
-    flex-wrap: wrap !important; 
-    gap: 20px !important; 
-  }
+  /* Remove margens extras que estão alongando o rodapé */
+  .footer-top { display: block !important; }
   
-  /* Força cada bloco de coluna a ocupar espaço controlado */
   .footer-col { 
-    width: 100% !important; /* No celular, colunas ocupam a largura toda */
-    margin-bottom: 20px;
+    width: 100% !important; 
+    margin-bottom: 10px !important; 
   }
 
-  /* O SEGREDO: Faz os itens da lista ficarem lado a lado em pares */
+  /* Esconde o espaçamento padrão da lista */
   .footer-col ul { 
     display: flex !important; 
     flex-wrap: wrap !important; 
-    padding: 0 !important;
+    padding: 0 !important; 
+    margin: 0 !important; 
   }
 
+  /* Define o tamanho de cada item para caber 2 por linha */
   .footer-col li { 
-    width: 48% !important; /* Dois itens por linha */
-    list-style: none !important;
-    margin-bottom: 10px;
+    width: 50% !important; 
+    padding: 5px 0 !important; 
   }
 }
 </style>
