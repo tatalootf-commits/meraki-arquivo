@@ -714,8 +714,31 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
 <!-- FOOTER -->
 <style>
 @media (max-width: 768px) {
-  .footer-top { display: flex; flex-wrap: wrap; gap: 20px; }
-  .footer-col { width: 45%; }
+  /* Força o container pai a aceitar quebrar linha */
+  .footer-top { 
+    display: flex !important; 
+    flex-wrap: wrap !important; 
+    gap: 20px !important; 
+  }
+  
+  /* Força cada bloco de coluna a ocupar espaço controlado */
+  .footer-col { 
+    width: 100% !important; /* No celular, colunas ocupam a largura toda */
+    margin-bottom: 20px;
+  }
+
+  /* O SEGREDO: Faz os itens da lista ficarem lado a lado em pares */
+  .footer-col ul { 
+    display: flex !important; 
+    flex-wrap: wrap !important; 
+    padding: 0 !important;
+  }
+
+  .footer-col li { 
+    width: 48% !important; /* Dois itens por linha */
+    list-style: none !important;
+    margin-bottom: 10px;
+  }
 }
 </style>
   <footer>
