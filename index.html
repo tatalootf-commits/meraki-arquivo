@@ -77,11 +77,12 @@ nav.scrolled{background:rgba(6,6,7,.95);backdrop-filter:blur(20px);padding:18px 
 .country-chip{display:flex;align-items:center;gap:8px;border:1px solid rgba(246,246,246,.1);padding:10px 18px;font-size:12px;letter-spacing:.5px;color:rgba(246,246,246,.6);transition:all .3s;background:rgba(246,246,246,.03)}
 .country-chip:hover{border-color:var(--red);color:var(--off-white);background:rgba(244,34,41,.08)}
 .country-flag {
-    font-size: 18px;
-    line-height: 1;
-    display: inline-block;
-    -webkit-text-fill-color: initial !important;
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+    -webkit-text-fill-color: unset !important;
+    color: initial !important;
+    text-shadow: none !important;
 }
 .global-number{font-size:clamp(80px,12vw,160px);font-weight:900;color:transparent;-webkit-text-stroke:1px rgba(244,34,41,.2);letter-spacing:-6px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
 
