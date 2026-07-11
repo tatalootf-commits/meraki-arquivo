@@ -92,14 +92,22 @@ nav.scrolled{background:rgba(6,6,7,.95);backdrop-filter:blur(20px);padding:18px 
 #servicos{padding:0;background:var(--gray)}
 .servicos-inner{max-width:1200px;margin:0 auto;padding:100px 64px}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border:1px solid rgba(246,246,246,.08);background:var(--gray)}
-.svc-card{padding:0;border-right:1px solid rgba(246,246,246,.08);border-bottom:1px solid rgba(246,246,246,.08);position:relative;overflow:hidden;transition:background .3s,transform .3s;cursor:default;display:flex;flex-direction:column;background:var(--black)}
-.svc-card:nth-child(3n){border-right:none}
-.svc-card:hover{background:rgba(244,34,41,.04);transform:translateY(-2px)}
-.svc-num{font-size:10px;letter-spacing:4px;color:var(--red);font-weight:700;margin-bottom:12px;display:block;text-transform:uppercase}
-.svc-visual{width:100%;overflow:hidden;display:block;background:#07050a;border-bottom:1px solid rgba(244,34,41,.1);flex-shrink:0;line-height:0}
-.svc-ia-visual{border-right:1px solid rgba(246,246,246,.08);overflow:hidden}
-.svc-ia-visual svg{display:block;width:100%;height:auto}
-.svc-ia-body{display:flex;flex-direction:column;justify-content:center;padding:52px 48px;background:var(--gray)}
+.svc-card {
+    border-right: 1px solid rgba(246,246,246,.08);
+    border-bottom: 1px solid rgba(246,246,246,.08);
+    position: relative;
+    background: var(--black);
+    padding-bottom: 40px;
+}
+
+.svc-body {
+    padding: 60px 48px 0 48px;
+}
+
+.svc-ia-body {
+    padding: 60px 48px;
+    background: var(--gray);
+}
 
 /* SOBRE */
 #sobre{padding:120px 64px;background:var(--black)}
