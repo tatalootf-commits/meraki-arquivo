@@ -151,14 +151,14 @@ nav.scrolled{background:rgba(6,6,7,.95);backdrop-filter:blur(20px);padding:18px 
 .steps-list{margin-top:64px}
 .step-row{display:grid;grid-template-columns:100px 1fr auto;gap:40px;padding:44px 0;border-bottom:1px solid rgba(246,246,246,.06);align-items:start;transition:border-color .3s;cursor:default}
 .step-row:hover{border-bottom-color:rgba(244,34,41,.3)}
-..step-num-big {
-    font-size: 56px;
-    font-weight: 900;
-    color: var(--red); /* Muda de transparente para o vermelho sólido da marca */
-    opacity: 0.3;      /* Mantém uma leve transparência para elegância, mas bem mais visível */
+.step-num-big {
+    font-size: 56px !important;
+    font-weight: 900 !important;
+    color: var(--red) !important;
+    opacity: 0.5;
     letter-spacing: -2px;
     line-height: 1;
-    transition: color .4s;
+    transition: all .4s;
 }
 .step-row:hover .step-num-big{color:rgba(244,34,41,.5)}
 .step-title{font-size:20px;font-weight:700;margin-bottom:10px;letter-spacing:-.3px}
