@@ -267,13 +267,15 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   
   .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   
-  /* Rodapé simples e seguro para não quebrar */
-  footer .footer-top {
-      display: flex !important;
-      flex-direction: column !important;
-      text-align: center !important;
-  }
+  .sobre-badge-wrap{right:0;bottom:-10px}
+  footer .footer-top{flex-direction:column}
+  .footer-bottom{flex-direction:column;text-align:center}
 }
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid-bg"></div>
