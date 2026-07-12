@@ -258,7 +258,19 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   .depo-grid{grid-template-columns:1fr}
   .step-row{grid-template-columns:60px 1fr;gap:20px}
   .step-tag{display:none}
-  .hero-stats{flex-direction:column;gap:0}
+  .hero-stats {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(246, 246, 246, .07);
+      border: none;
+  }
+  .hero-stat {
+      border-right: none;
+      border-bottom: none;
+      background: var(--black);
+      padding: 24px 10px;
+  }
   .hero-stat{border-right:none;border-bottom:1px solid rgba(246,246,246,.07)}
   .sobre-badge-wrap{right:0;bottom:-10px}
   .countries-grid{gap:8px}
