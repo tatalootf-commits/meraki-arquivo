@@ -238,7 +238,6 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
 .reveal-delay-3{transition-delay:.3s}
 
 @media(max-width:960px){
-  /* ... (mantenha a parte de cima igual como estava) ... */
   nav{padding:20px 24px}
   nav.scrolled{padding:14px 24px}
   .nav-links,.nav-cta{display:none}
@@ -262,22 +261,39 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   .sobre-badge-wrap{right:0;bottom:-10px}
 
-  /* RODAPÉ DEFINITIVO - FLEXÍVEL */
+  /* --- RODAPÉ FINALIZADO --- */
   footer .footer-top {
       display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
       text-align: center !important;
       padding-top: 40px !important;
   }
-  
-  /* Agrupa apenas as colunas de links em 2 colunas */
-  footer .footer-top { display: flex; flex-wrap: wrap; justify-content: center; }
-  footer .footer-top > div:first-child { width: 100%; margin-bottom: 30px; }
-  footer .footer-col { width: 45%; margin-bottom: 20px; }
-  
-  /* Força o contato a ocupar a linha toda sozinho */
-  footer .footer-col:nth-child(4) { width: 100%; }
+
+  /* Logo e subtítulo (Ocupa 100%) */
+  footer .footer-top > div:first-child { width: 100% !important; margin-bottom: 30px; }
+
+  /* Serviços e Empresa (Lado a lado, 45% cada) */
+  footer .footer-col:nth-child(2), 
+  footer .footer-col:nth-child(3) { 
+      width: 45% !important; 
+      margin-bottom: 20px !important; 
+      text-align: center !important; 
+  }
+
+  /* Contato (Ocupa 100%) */
+  footer .footer-col:nth-child(4) { 
+      width: 100% !important; 
+      margin-top: 10px !important; 
+      text-align: center !important; 
+  }
+
+  /* Divide os links de contato em 2 colunas abaixo do título */
+  footer .footer-col:nth-child(4) ul { 
+      display: grid !important; 
+      grid-template-columns: 1fr 1fr !important; 
+      justify-items: center !important;
+  }
 
   footer h4 { font-size: 14px !important; margin-bottom: 10px !important; }
   footer ul { padding: 0 !important; list-style: none !important; }
