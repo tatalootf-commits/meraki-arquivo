@@ -238,30 +238,8 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
 .reveal-delay-3{transition-delay:.3s}
 
 @media(max-width:960px){
-  nav{padding:20px 24px}
-  nav.scrolled{padding:14px 24px}
-  .nav-links,.nav-cta{display:none}
-  #hero{padding:120px 24px 80px}
-  #global,#servicos .servicos-inner,#sobre,#processo,#resultados,#depoimentos,#cta-final,footer{padding-left:20px !important;padding-right:20px !important}
-  .services-grid{grid-template-columns:1fr}
-  .svc-card{border-right:none}
-  .svc-ia-wrap{grid-template-columns:1fr}
-  .svc-ia-visual{border-right:none;border-bottom:1px solid rgba(246,246,246,.08)}
-  .svc-ia-body{padding:32px 20px}
-  .sobre-inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
-  .sobre-label { justify-content: center; }
-  .btn-red { margin-left: auto; margin-right: auto; }
-  .res-grid{grid-template-columns:repeat(2,1fr); gap: 15px;}
-  .depo-grid{grid-template-columns:1fr; gap: 20px;}
-  .depo-inner{padding: 60px 20px !important;}
-  .step-row{grid-template-columns:60px 1fr;gap:20px}
-  .step-tag{display:none}
-  .hero-stats { display: grid !important; grid-template-columns: 1fr 1fr; gap: 1px; }
-  .hero-stat { border-right: none; border-bottom: 1px solid rgba(246,246,246,.07); padding: 24px 10px; }
-  .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
-  .sobre-badge-wrap{right:0;bottom:-10px}
+  /* Mantenha todo o código de cima igual até chegar no Footer */
 
-  /* --- RODAPÉ FINALIZADO --- */
   footer .footer-top {
       display: flex !important;
       flex-wrap: wrap !important;
@@ -270,36 +248,36 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
       padding-top: 40px !important;
   }
 
-  /* Logo e subtítulo (Ocupa 100%) */
-  footer .footer-top > div:first-child { width: 100% !important; margin-bottom: 30px; }
+  /* Logo e subtítulo: Sempre ocupam a linha toda e centralizados */
+  footer .footer-top > div:first-child { 
+      width: 100% !important; 
+      margin-bottom: 30px !important; 
+      text-align: center !important; 
+  }
 
-  /* Serviços e Empresa (Lado a lado, 45% cada) */
+  /* Serviços e Empresa: Forçados a 48% cada para ficarem lado a lado */
   footer .footer-col:nth-child(2), 
   footer .footer-col:nth-child(3) { 
-      width: 45% !important; 
+      width: 48% !important; 
       margin-bottom: 20px !important; 
       text-align: center !important; 
   }
 
-  /* Contato (Ocupa 100%) */
+  /* Contato: Ocupa a linha toda e centraliza o conteúdo */
   footer .footer-col:nth-child(4) { 
       width: 100% !important; 
       margin-top: 10px !important; 
       text-align: center !important; 
   }
 
-  /* Divide os links de contato em 2 colunas abaixo do título */
+  /* Ajuste para alinhar os links do contato em 2 colunas */
   footer .footer-col:nth-child(4) ul { 
       display: grid !important; 
       grid-template-columns: 1fr 1fr !important; 
       justify-items: center !important;
+      padding: 0 !important;
   }
-
-  footer h4 { font-size: 14px !important; margin-bottom: 10px !important; }
-  footer ul { padding: 0 !important; list-style: none !important; }
-  footer li { font-size: 12px !important; margin-bottom: 5px !important; }
 }
-</style>
   
 <!-- HERO -->
 <section id="hero">
