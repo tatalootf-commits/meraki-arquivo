@@ -268,8 +268,23 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   
   .sobre-badge-wrap{right:0;bottom:-10px}
-  footer .footer-top{flex-direction:column}
-  .footer-bottom{flex-direction:column;text-align:center}
+  
+  /* --- NOVO RODAPÉ ORGANIZADO --- */
+  footer .footer-top{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important; /* Duas colunas */
+      gap: 25px !important;
+      text-align: left;
+  }
+  
+  /* Faz a div da Logo/Descrição ocupar as duas colunas no topo */
+  footer .footer-top > div:first-child {
+      grid-column: span 2 !important;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .footer-bottom{flex-direction:column;text-align:center; margin-top: 20px;}
 }
 
 @media(prefers-reduced-motion:reduce){
