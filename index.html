@@ -242,61 +242,29 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   nav.scrolled{padding:14px 24px}
   .nav-links,.nav-cta{display:none}
   #hero{padding:120px 24px 80px}
-  .hero-stat{padding:20px 28px}
-  .stat-n{font-size:28px}
-  #global,#servicos .servicos-inner,#sobre,#processo,#resultados,#depoimentos,#cta-final,footer{padding-left:24px;padding-right:24px}
+  #global,#servicos .servicos-inner,#sobre,#processo,#resultados,#depoimentos,#cta-final,footer{padding-left:20px !important;padding-right:20px !important}
   .services-grid{grid-template-columns:1fr}
   .svc-card{border-right:none}
   .svc-ia-wrap{grid-template-columns:1fr}
   .svc-ia-visual{border-right:none;border-bottom:1px solid rgba(246,246,246,.08)}
-  .svc-ia-body{padding:32px 24px}
-  .sobre-inner {
-      grid-template-columns: 1fr;
-      gap: 48px;
-      text-align: center;
-  }
-  .sobre-label {
-      justify-content: center;
-  }
-  .btn-red {
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .res-grid{grid-template-columns:repeat(2,1fr)}
-  .depo-grid{grid-template-columns:1fr}
+  .svc-ia-body{padding:32px 20px}
+  .sobre-inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+  .sobre-label { justify-content: center; }
+  .btn-red { margin-left: auto; margin-right: auto; }
+  .res-grid{grid-template-columns:repeat(2,1fr); gap: 15px;}
+  .depo-grid{grid-template-columns:1fr; gap: 20px;}
+  .depo-inner{padding: 60px 20px !important;}
   .step-row{grid-template-columns:60px 1fr;gap:20px}
   .step-tag{display:none}
-  .hero-stats {
-      display: grid !important;
-      grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: rgba(246, 246, 246, .07);
-      border: none;
-  }
-  .hero-stat {
-      border-right: none;
-      border-bottom: none;
-      background: var(--black);
-      padding: 24px 10px;
-  }
-  .countries-grid {
-      display: grid !important;
-      grid-template-columns: 1fr 1fr !important;
-      gap: 15px !important;
-  }
-  .hero-stat{border-right:none;border-bottom:1px solid rgba(246,246,246,.07)}
+  .hero-stats { display: grid !important; grid-template-columns: 1fr 1fr; gap: 1px; }
+  .hero-stat { border-right: none; border-bottom: 1px solid rgba(246,246,246,.07); padding: 24px 10px; }
+  .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   .sobre-badge-wrap{right:0;bottom:-10px}
-  .countries-grid{gap:8px}
-  .country-chip{padding:8px 12px}
   footer .footer-top{flex-direction:column}
   .footer-bottom{flex-direction:column;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
-</head>
-<body>
-
-<div class="cursor" id="cur"></div>
 
 <!-- NAV -->
 <nav id="nav">
