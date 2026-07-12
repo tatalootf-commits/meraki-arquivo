@@ -267,19 +267,24 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   
   .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   
-  /* Ajuste do Rodapé para ser compacto */
-  footer .footer-top{
+  /* --- RODAPÉ ESTILO DESIGN --- */
+  footer .footer-top {
       display: grid !important;
-      grid-template-columns: 1fr 1fr !important;
-      gap: 20px !important;
-      padding-top: 20px !important;
+      grid-template-columns: 1fr !important; /* Logo em cima */
+      gap: 30px !important;
+      padding-top: 40px !important;
   }
-  .footer-bottom{flex-direction:column;text-align:center}
   
+  /* Se você tiver uma div com os links, ajuste o grid abaixo para eles: */
+  .footer-links-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important; /* Serviços e Empresa em cima, Contato embaixo */
+      gap: 20px !important;
+  }
+  
+  .footer-bottom{flex-direction:column;text-align:center; margin-top: 20px;}
   .sobre-badge-wrap{right:0;bottom:-10px}
 }
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-</style>
   
 <!-- NAV -->
 <nav id="nav">
