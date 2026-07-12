@@ -268,23 +268,7 @@ footer{background:var(--gray-mid);padding:56px 64px;border-top:1px solid rgba(24
   .countries-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 15px !important; }
   
   .sobre-badge-wrap{right:0;bottom:-10px}
-
-  /* --- REFAZENDO O RODAPÉ SEM TOCAR EM NADA --- */
-  footer .footer-top {
-      display: flex !important;
-      flex-direction: column !important;
-      text-align: center !important;
-  }
-  
-  /* Ajuste apenas dos blocos do rodapé */
-  footer .footer-top > div {
-      width: 100% !important;
-      margin-bottom: 20px !important;
-  }
-  
-  /* Centraliza a Logo/Subtítulo */
-  footer .footer-top > div:first-child { order: -1; }
-  
+  footer .footer-top{flex-direction:column}
   .footer-bottom{flex-direction:column;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
